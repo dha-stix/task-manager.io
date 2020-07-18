@@ -44,6 +44,7 @@ const addTodo = (e) => {
     //An event that edits each input by the clicking the edit button
     editBtn.addEventListener("click", () => {
       document.querySelector("input").value = list.textContent;
+      document.querySelector("input").focus();
       lists.removeChild(list);
     });
 
@@ -122,6 +123,7 @@ const getTodos = function () {
     //An event that edits each input by the clicking the edit button
     editBtn.addEventListener("click", () => {
       document.querySelector("input").value = list.textContent;
+      document.querySelector("input").focus();
       lists.removeChild(list);
     });
 
